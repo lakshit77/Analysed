@@ -15,12 +15,12 @@
       rel="stylesheet">
     <title>Analysed</title>
   </head>
-  <body>
+  <body class="bg-light">
     <div class="wrapper">
         <!-- Navbar -->
-          <nav class="row navbar navbar-expand-md navbar-light bg-light">
-            <nav class="col-3 d-xl-block d-lg-block d-none">
-              <div class="upper_Layer d-none d-md-block d-lg-block d-xl-block">
+          <nav class="row navbar navbar-expand-md navbar-light bg-light fixed-top">
+            <nav class="col-3 d-xl-block d-lg-block d-md-block d-none">
+              <div class="upper_Layer">
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                   <img src="analysed_logo.png" alt="logo" class="img-fluid ml-4">
                   
@@ -30,28 +30,30 @@
                 </div>
               </div>
             </nav>
-            <nav class="col-9">
-                <div onclick="myFunctions();" class="sidebarCollapse navbar-toggler d-md-none d-lg-none d-xl-none d-inline-flex float-left mt-2" >
-                    <i class="material-icons" style="color:white;" id="showmore">toggle_off</i>
+            <nav class="col-12">
+                <div class="d-flex d-row justify-content-between">
+                    <div onclick="myFunctions();" class="sidebarCollapse navbar-toggler d-md-none d-lg-none d-xl-none d-inline-flex float-left mt-2" >
+                        <i class="material-icons" style="color:white;" id="showmore">toggle_off</i>
+                    </div>
+                    <img src="analysed_logo.png" alt="logo" class="img-fluid text-center navbar-toggler" style="height: 50px; width: 100px">
+                    <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"  aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="material-icons mt-2" style="color:white">more_horiz</i>
+                    </button>
                 </div>
-                <img src="analysed_logo.png" alt="logo" class="img-fluid text-center navbar-toggler" style="height: 50px; width: 100px">
-                <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"  aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="material-icons mt-2" style="color:white">more_horiz</i>
-                </button>
                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0 clearfix">
-                  <li class="nav-item">
-                    <i class="material-icons mt-2 text-muted" style="color:#4e4a88;">search</i>
-                  </li>
-                  <li class="nav-item">
-                        <i class="material-icons mt-2 ml-5 text-muted" style="color:#4e4a88;" onclick="openFullscreen();">crop_free</i>
-                  </li>
-                </ul>
-                <form class="form-inline my-2 my-lg-0">
-                  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
+                <div class="d-flex d-row justify-content-between col-12 col-md-9" style="color:#4e4a88;">
+                     <i class="material-icons mt-2 text-muted">search</i> 
+                 
+                     <i class="material-icons mt-2 text-muted" id= "fullScreen" onclick="openFullscreen();">fullscreen</i>
+                 
+                     <p class="mt-2 m-2 text-muted" >Event</p> 
+                 
+                     <p class="mt-2 m-2 text-muted" >Recritment</p> 
+
+                     <a href=" http://analysed.in/"><i class="material-icons mt-2 text-muted" >power_settings_new</i></a> 
+
               </div>
+            </div>
             </nav>
           </nav>
         </div>
@@ -102,50 +104,53 @@
              
           </nav>
           <!-- Sidebar end -->
-         <!-- Content start here -->
-         <div id="content">
-            <div class="container-fluid">
-                <div class="row">
-                <div class="col-lg-4 col-sm-12">
-                    <div class="card" style="width: 18rem;">
-                        <img src="" class="card-img-top img-fluid" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+          <!-- Content start here -->
+          <div id="content">
+                <div class="container-fluid">
+                    <div class="row">
+                         <div class="col-12 mt-5 form_content p-3">
+                            <div class="d-flex justify-content-center">
+                                <h4>Search for Candidate</h4>
+                            </div>
+                            <form>
+                                <div class="form-row">
+                                    <div class="col">
+                                    <input type="text" class="form-control" placeholder="Enter the Skills">
+                                    </div>
+                                    <div class="col">
+                                    <input type="text" class="form-control" placeholder="Enter the Qualification">
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="d-flex justify-content-center mt-2">
+                                <button class="btn btn-outline-primary ">Submit</button>
+                            </div>
+                         </div>
+                    </div> 
+                    <div class="row">
+                        <div class="col-xl-3 col-sm-6">
+                                <div class="card card_1 p-2 m-2">
+                                  <img src="Profile_photo.png" class="card-img-top" alt="...">
+                                    <div class="card-block">
+                                        <div class="row">
+                                            <div class="col-12 text-center">
+                                                <h4>$52400</h4>
+                                                <h6>All earning</h6> 
+                                            </div>
+                                            <div class="col-4">
+                                                <i class="fas fa-signal"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <h6><i class="fas fa-clock"></i> update 2:30am</h6>
+                                    </div>
+                                </div>
                         </div>
-                    </div>     
-                </div>    
-                <div class="col-lg-4 col-sm-12">
-                    <div class="card" style="width: 18rem;">
-                        <img src="" class="card-img-top img-fluid" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>     
-                </div>    
-                <div class="col-lg-4 col-sm-12">
-                    <div class="card" style="width: 18rem;">
-                        <img src="" class="card-img-top img-fluid" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>     
-                </div>    
+                    </div>   
+                </div>
             </div>
         </div>
-            <div class="container-fluid">
-                    <div class="d-flex justify-content-center">
-                            <button class="btn btn-success mt-3">Take a tour</button>
-                     </div>
-           </div>
-
-      </div>
-
 
 
 
@@ -194,6 +199,12 @@
         document.webkitExitFullscreen();
     } else if (document.msExitFullscreen) {
         document.msExitFullscreen();
+    }
+    var x = document.getElementById("fullScreen");
+    if (x.innerHTML === "fullscreen") {
+        x.innerHTML = "fullscreen_exit";
+    } else {
+        x.innerHTML = "fullscreen";
     }
     }
     /* End of Full Screen */
