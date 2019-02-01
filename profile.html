@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <!-- Css File Link -->
+    <link rel="stylesheet" href="index.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Material Icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <title>Analysed</title>
+  </head>
+  <body class="bg-light">
+    <div class="wrapper">
+        <!-- Navbar -->
+          <nav class="row navbar navbar-expand-md navbar-light bg-light fixed-top">
+            <nav class="col-3 d-xl-block d-lg-block d-md-block d-none">
+              <div class="upper_Layer">
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                  <img src="analysed_logo.png" alt="logo" class="img-fluid ml-4">
+                  
+                    <div class="mx-auto mt-3 d-block sidebarCollapse" onclick="myFunction();">
+                        <a class="material-icons ml-5" id="showMore" style="color:white">toggle_off</a>
+                    </div>
+                </div>
+              </div>
+            </nav>
+            <nav class="col-12">
+                <div class="d-flex d-row justify-content-between">
+                    <div onclick="myFunctions();" class="sidebarCollapse navbar-toggler d-md-none d-lg-none d-xl-none d-inline-flex float-left mt-2" >
+                        <i class="material-icons" style="color:white;" id="showmore">toggle_off</i>
+                    </div>
+                    <img src="analysed_logo.png" alt="logo" class="img-fluid text-center navbar-toggler" style="height: 50px; width: 100px">
+                    <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"  aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="material-icons mt-2" style="color:white">more_horiz</i>
+                    </button>
+                </div>
+               <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <div class="d-flex d-row justify-content-between col-12 col-md-9" style="color:#4e4a88;">
+                     <i class="material-icons mt-2 text-muted">search</i> 
+                 
+                     <i class="material-icons mt-2 text-muted" id= "fullScreen" onclick="openFullscreen();">fullscreen</i>
+                 
+                     <p class="mt-2 m-2 text-muted" >Event</p> 
+                 
+                     <p class="mt-2 m-2 text-muted" >Recritment</p> 
+
+                     <a href=" http://analysed.in/"><i class="material-icons mt-2 text-muted" >power_settings_new</i></a> 
+
+              </div>
+            </div>
+            </nav>
+          </nav>
+        </div>
+          <!-- Navbar end -->
+          <!-- Sidebar -->
+          <nav id="sidebar">
+              <ul class="list components">
+                  <div class="card Sidebar_card" style="width: 18rem;">
+                      <img class="" src="avatar.jpg" alt="Card image cap">
+                      <div class="card-body text-center">
+                        <h5 class="">Dummy</h5>
+                        <h5 class="">Designation as: </h5>
+                        <h5 class="">Organization as: </h5>
+                        <button class="btn">My Profile</button>
+                      </div>
+                  </div>
+                  <li class="active">
+                     <a href="index.html">Dashboard</a>
+                  </li>
+                  <li>
+                      <a href="create_virtual_recruitment.html">Create Virtual Recruitment</a>
+                  </li>
+                  <li>
+                      <a href="#">  My Database</a>
+                  </li>
+                  <li>
+                      <a href="#"> Job Listing</a>
+                  </li>
+                  <li>
+                      <a href="#"> Resume Sorting Tool</a>
+                  </li>
+                  <li>
+                      <a href="#"> Create a Task</a>
+                  </li>
+                  <li>
+                      <a href="#"> Create a Challenge</a>
+                  </li>
+                  <li>
+                      <a href="#"> Share Profile</a>
+                  </li>
+                  <li>
+                      <a href="#"> Referral</a>
+                  </li>
+                  <li>
+                      <a href="#"> About Organization</a>
+                  </li>
+              </ul>
+             
+          </nav>
+          <!-- Sidebar end -->
+          <!-- Content start here -->
+          <div id="content">
+                <div class="container-fluid">
+                    <div class="row">
+                         
+                    </div>    
+                </div>
+            </div>
+                
+
+          </div>
+
+
+
+
+
+
+
+
+
+
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+          $('.sidebarCollapse').on('click', function () {
+              $('#sidebar, #content').toggleClass('active');
+              $('.collapse.in').toggleClass('in');
+              $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+          });
+      });
+      /* Full Screen */
+    var elem = document.documentElement;
+    function openFullscreen() {
+    if (elem.requestFullscreen) {
+        elem.requestFullscreen();
+    } else if (elem.mozRequestFullScreen) { /* Firefox */
+        elem.mozRequestFullScreen();
+    } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+        elem.webkitRequestFullscreen();
+    } else if (elem.msRequestFullscreen) { /* IE/Edge */
+        elem.msRequestFullscreen();
+    }
+    if (document.exitFullscreen) {
+        document.exitFullscreen();
+    } else if (document.mozCancelFullScreen) {
+        document.mozCancelFullScreen();
+    } else if (document.webkitExitFullscreen) {
+        document.webkitExitFullscreen();
+    } else if (document.msExitFullscreen) {
+        document.msExitFullscreen();
+    }
+    var x = document.getElementById("fullScreen");
+    if (x.innerHTML === "fullscreen") {
+        x.innerHTML = "fullscreen_exit";
+    } else {
+        x.innerHTML = "fullscreen";
+    }
+    }
+    /* End of Full Screen */
+
+    /* To change the icon on click */
+    function myFunction() {
+    var x = document.getElementById("showMore");
+    if (x.innerHTML === "toggle_off") {
+        x.innerHTML = "toggle_on";
+    } else {
+        x.innerHTML = "toggle_off";
+    }
+    }
+    function myFunctions() {
+    var x = document.getElementById("showmore");
+    if (x.innerHTML === "toggle_off") {
+        x.innerHTML = "toggle_on";
+    } else {
+        x.innerHTML = "toggle_off";
+    }
+    }
+    /* End of icon */
+
+    
+  </script>
+  </body>
+</html>

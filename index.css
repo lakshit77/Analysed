@@ -226,3 +226,17 @@ a.article:hover {
     font-size: .9rem;
 }
 
+/* Job _ listing */
+.card{
+    box-shadow: 0 1px 20px 0 rgba(69,90,100,.08);
+}
+.btn_color_1{
+    background: linear-gradient(to right, #fe9466, #feb697);
+    color: #fff;
+}
+.btn_color_2{
+    background: linear-gradient(to right, #01abae, #01dade);
+    color: #fff;
+}
+/* End of Job_listing */
+
