@@ -1,5 +1,6 @@
 body{
     font-family: open sans, sans-serif;
+    color:#404e67 !important;
 }
 
 /* ---------------------------------------------------
@@ -239,4 +240,15 @@ a.article:hover {
     color: #fff;
 }
 /* End of Job_listing */
-
+/* tab */
+.tab li a{
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #404e67;
+}
+.tab li.active{
+    border-bottom: 4px solid #007bff;
+}
+.tab li.active a{
+    color: #007bff;
+}
