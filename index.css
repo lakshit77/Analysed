@@ -246,9 +246,12 @@ a.article:hover {
     text-decoration: none;
     color: #404e67;
 }
-.tab li.active{
+.tab li a.active{
     border-bottom: 4px solid #007bff;
 }
-.tab li.active a{
+.tab li a.active{
     color: #007bff;
 }
+/* tab1 personal info */
+
+/* tab 1 end */
