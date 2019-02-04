@@ -9,49 +9,64 @@
     <!-- Css File Link -->
     <link rel="stylesheet" href="index.css">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <!-- Material Icon -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
-    <title>Analysed</title>
+      <!-- Feather icon -->
+      <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>    <title>Analysed</title>
   </head>
   <body class="bg-light">
     <div class="wrapper">
         <!-- Navbar -->
-          <nav class="row navbar navbar-expand-md navbar-light bg-light">
-            <nav class="col-3 d-xl-block d-lg-block d-none">
-              <div class="upper_Layer d-none d-md-block d-lg-block d-xl-block">
+          <nav class="row navbar navbar-expand-md navbar-light bg-light fixed-top">
+            <nav class="col-3 d-xl-block d-lg-block d-md-block d-none">
+              <div class="upper_Layer">
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                  <img src="analysed_logo.png" alt="logo" class="img-fluid ml-4">
+                  <img src="analysed_logo.png" alt="logo" class="img-fluid ml-4 mt-1">
                   
-                    <div class="mx-auto mt-3 d-block sidebarCollapse">
+                    <div class="mx-auto mt-3 d-block sidebarCollapse" onclick="myFunction();">
                         <a class="material-icons ml-5" id="showMore" style="color:white">toggle_off</a>
                     </div>
                 </div>
               </div>
             </nav>
-            <nav class="col-9">
-                <div class="sidebarCollapse navbar-toggler d-md-none d-lg-none d-xl-none d-inline-flex float-left mt-2" >
-                    <i class="material-icons" style="color:white;">toggle_off</i>
+            <nav class="col-12">
+                <div class="d-flex d-row justify-content-between">
+                    <div onclick="myFunctions();" class="sidebarCollapse navbar-toggler d-md-none d-lg-none d-xl-none d-inline-flex float-left mt-2" >
+                        <i class="material-icons" style="color:white;" id="showmore">toggle_off</i>
+                    </div>
+                    <img src="analysed_logo.png" alt="logo" class="img-fluid text-center navbar-toggler" style="height: 50px; width: 100px">
+                    <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"  aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="material-icons mt-2" style="color:white">more_horiz</i>
+                    </button>
                 </div>
-                <img src="analysed_logo.png" alt="logo" class="img-fluid text-center navbar-toggler" style="height: 50px; width: 100px">
-                <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"  aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="material-icons mt-2" style="color:white">more_horiz</i>
-                </button>
                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0 clearfix">
-                  <li class="nav-item">
-                    <i class="material-icons mt-2 text-muted" style="color:#4e4a88;">search</i>
-                  </li>
-                  <li class="nav-item">
-                        <i class="material-icons mt-2 ml-5 text-muted" style="color:#4e4a88;">crop_free</i>
-                  </li>
-                </ul>
-                <form class="form-inline my-2 my-lg-0">
-                  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
+                <div class="d-flex d-row col-12 col-md-9">
+                    <div class="col-6 d-none d-md-block">
+                        <i class="material-icons mt-2 mr-5 text-muted">search</i> 
+                        <i class="material-icons mt-2 text-muted" id= "fullScreen" onclick="openFullscreen();">fullscreen</i>
+                    </div>
+                    <div class="col-md-6 col-sm-12 d-flex flex-row justify-content-md-end justify-content-sm-center">
+                            
+                         <i data-feather="bell" class="mt-3"></i><span class=" badge bg-c-pink mr-4">5</span>
+                         <i data-feather="message-square" class="mt-3"></i><span class="badge bg-c-green mr-4">3</span>
+                         <div class="dropdown">
+                            <a class=" nav-link" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="navimg.jpg" alt="user-img" class="img-fluid " style="width:30px; height:30px">
+                                <span>John Doe <i data-feather="chevron-down"></i></span>
+                            </a>
+                            <div class="dropdown-menu mt-3" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#"><i data-feather="settings" class="mr-2"></i> Setting</a>
+                                <a class="dropdown-item mt-3" href="profile.html"><i data-feather="user" class="mr-2"></i> Profile</a>
+                                <a class="dropdown-item mt-3" href="#"><i data-feather="message-square" class="mr-2"></i> My Message</a>
+                                <a class="dropdown-item mt-3" href="#"><i data-feather="lock" class="mr-2"></i> Lock Screen</a>
+                                <a class="dropdown-item mt-3" href="#"><i data-feather="log-out" class="mr-2"></i> Logout</a>
+                            </div>
+                         </div>
+                    </div>
               </div>
+            </div>
             </nav>
           </nav>
         </div>
@@ -59,44 +74,35 @@
           <!-- Sidebar -->
           <nav id="sidebar">
               <ul class="list components">
-                  <div class="card Sidebar_card" style="width: 18rem;">
-                      <img class="" src="avatar.jpg" alt="Card image cap">
-                      <div class="card-body text-center">
-                        <h5 class="">Dummy</h5>
-                        <h5 class="">Designation as: </h5>
-                        <h5 class="">Organization as: </h5>
-                        <button class="btn">My Profile</button>
-                      </div>
-                  </div>
                   <li class="active">
-                     <a href="index.html">Dashboard</a>
+                     <a href="index.html" ><i data-feather="home"></i><span class="ml-2"></span> Dashboard</a>
                   </li>
                   <li>
-                      <a href="create_virtual_recruitment.html">Create Virtual Recruitment</a>
+                      <a href="create_virtual_recruitment.html"><i data-feather="globe"></i><span class="ml-2"></span> Create Virtual Recruitment</a>
                   </li>
                   <li>
-                      <a href="#">  My Database</a>
+                      <a href="my_database.html"> <i data-feather="database"></i><span class="ml-2"></span> My Database</a>
                   </li>
                   <li>
-                      <a href="#"> Job Listing</a>
+                      <a href="job_listing.html"><i data-feather="list"></i><span class="ml-2"></span> Job Listing</a>
                   </li>
                   <li>
-                      <a href="#"> Resume Sorting Tool</a>
+                      <a href="resume_Sorting_tool.html"><i data-feather="layers"></i><span class="ml-2"></span> Resume Sorting Tool</a>
                   </li>
                   <li>
-                      <a href="#"> Create a Task</a>
+                      <a href="create_task.html"><i data-feather="edit-2"></i><span class="ml-2"></span> Create a Task</a>
                   </li>
                   <li>
-                      <a href="#"> Create a Challenge</a>
+                      <a href="create_challenge.html"><i data-feather="edit"></i><span class="ml-2"></span> Create a Challenge</a>
                   </li>
                   <li>
-                      <a href="#"> Share Profile</a>
+                      <a href="#"><i data-feather="send"></i><span class="ml-2"></span> Share Profile</a>
                   </li>
                   <li>
-                      <a href="#"> Referral</a>
+                      <a href="#"><i data-feather="external-link"></i><span class="ml-2"></span> Referral</a>
                   </li>
                   <li>
-                      <a href="#"> About Organization</a>
+                      <a href="#"><i data-feather="info"></i><span class="ml-2"></span> About Organization</a>
                   </li>
               </ul>
              
@@ -194,6 +200,8 @@
 
 
 
+
+
     
     <!-- Optional JavaScript -->
     <!-- jQuery CDN - Slim version (=without AJAX) -->
@@ -212,6 +220,58 @@
               $('a[aria-expanded=true]').attr('aria-expanded', 'false');
           });
       });
+      /* Full Screen */
+    var elem = document.documentElement;
+    function openFullscreen() {
+    if (elem.requestFullscreen) {
+        elem.requestFullscreen();
+    } else if (elem.mozRequestFullScreen) { /* Firefox */
+        elem.mozRequestFullScreen();
+    } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+        elem.webkitRequestFullscreen();
+    } else if (elem.msRequestFullscreen) { /* IE/Edge */
+        elem.msRequestFullscreen();
+    }
+    if (document.exitFullscreen) {
+        document.exitFullscreen();
+    } else if (document.mozCancelFullScreen) {
+        document.mozCancelFullScreen();
+    } else if (document.webkitExitFullscreen) {
+        document.webkitExitFullscreen();
+    } else if (document.msExitFullscreen) {
+        document.msExitFullscreen();
+    }
+    var x = document.getElementById("fullScreen");
+    if (x.innerHTML === "fullscreen") {
+        x.innerHTML = "fullscreen_exit";
+    } else {
+        x.innerHTML = "fullscreen";
+    }
+    }
+    /* End of Full Screen */
+
+    /* To change the icon on click */
+    function myFunction() {
+    var x = document.getElementById("showMore");
+    if (x.innerHTML === "toggle_off") {
+        x.innerHTML = "toggle_on";
+    } else {
+        x.innerHTML = "toggle_off";
+    }
+    }
+    function myFunctions() {
+    var x = document.getElementById("showmore");
+    if (x.innerHTML === "toggle_off") {
+        x.innerHTML = "toggle_on";
+    } else {
+        x.innerHTML = "toggle_off";
+    }
+    }
+    /* End of icon */
+    /* Feather icon script */
+        feather.replace()
+
+/* end of script */
 
     
   </script>
