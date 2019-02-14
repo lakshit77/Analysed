@@ -105,7 +105,7 @@
           <!-- Navbar end -->
           <!-- Right Sidebar -->
           <nav class="sidebar">
-              <ul class="list components navbar-nav">
+              <ul class="list components nav">
                   <li class="nav-item active">
                      <a href="index.html" class="nav-link"><i data-feather="home"></i><span class="ml-2"></span> Dashboard</a>
                   </li>
@@ -309,6 +309,25 @@
     /* End of icon */
     /* Feather icon script */
         feather.replace()
+
+        /* For within Pages */
+    $(".nav li a").click(function() {
+    if ($(".nav li a").removeClass("active")) {
+        $(this).removeClass("active");
+    }
+    $(this).addClass("active");
+});
+    /* For different pages */
+    jQuery(document).ready(function($){
+           var path = window.location.pathname.split("/").pop();
+
+           if(path == ''){
+               path = 'index.html';
+           }
+
+           var target = $('nav a[href="'+path+'"]');
+           target.addClass('active');
+       });
 
 /* end of script */
 

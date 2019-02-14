@@ -234,15 +234,18 @@ a.article:hover {
     text-decoration: none;
     color: #dcdcdc;
 }
-.sidebar ul li.active{
+.sidebar ul li a.active{
     color:white;
     border-left:2px #fe8a7d solid;
+}
+.nav{
+    display: block !important;
 }
 .sidebar ul li a:hover{
     color: white;
 }
 
-/* Sidebar Profile */
+
 /* Content */
 #content {
     width: calc(100% - 250px);
