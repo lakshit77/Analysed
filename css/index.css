@@ -438,12 +438,7 @@ label p{
 .img-radius, .media .img-radius{
     border-radius: 7%;
 }
-@media (max-width: 991px){
-.table-responsive {
-    display: block;
-    width: 100% !important;
-}
-}
+
 
 .dropdown-color{
     color:white !important;
@@ -469,7 +464,7 @@ label p{
 
 /* end of user contact tab */
 /* Search Expand */
-input {
+.expand {
     outline: none;
     border: none !important;
 }
@@ -521,7 +516,7 @@ input::-webkit-input-placeholder {
 	color: transparent;
 	cursor: pointer;
 }
-#demo-2 input[type=search]:hover {
+#demo-2     :hover {
 	background-color: #fff;
 }
 #demo-2 input[type=search]:focus {
@@ -539,4 +534,7 @@ input::-webkit-input-placeholder {
 }
 #demo-2 input::-webkit-input-placeholder {
 	color: transparent;
+}
+.dropdown-toggle::after {
+    display:none !important;
 }

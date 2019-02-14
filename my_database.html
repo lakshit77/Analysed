@@ -1,28 +1,33 @@
 <!doctype html>
 <html lang="en">
   <head>
+        <title>Analysed</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 
     <!-- Css File Link -->
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/index.css">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <!-- Material Icon -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- Material Icon --> 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-    <title>Analysed</title>
+    rel="stylesheet">
+    <!-- Feather icon -->
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>   
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    
   </head>
   <body class="bg-light">
     <div class="wrapper">
         <!-- Navbar -->
           <nav class="row navbar navbar-expand-md navbar-light bg-light fixed-top">
-            <nav class="col-3 d-xl-block d-lg-block d-md-block d-none">
+            <nav class="col-2 d-xl-block d-lg-block d-md-block d-none">
               <div class="upper_Layer">
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                  <img src="analysed_logo.png" alt="logo" class="img-fluid ml-4">
+                  <img src="analysed_logo.png" alt="logo" class="img-fluid ml-4 mt-1">
                   
                     <div class="mx-auto mt-3 d-block sidebarCollapse" onclick="myFunction();">
                         <a class="material-icons ml-5" id="showMore" style="color:white">toggle_off</a>
@@ -30,7 +35,7 @@
                 </div>
               </div>
             </nav>
-            <nav class="col-12">
+            <nav class="col-md-10 col-sm-12">
                 <div class="d-flex d-row justify-content-between">
                     <div onclick="myFunctions();" class="sidebarCollapse navbar-toggler d-md-none d-lg-none d-xl-none d-inline-flex float-left mt-2" >
                         <i class="material-icons" style="color:white;" id="showmore">toggle_off</i>
@@ -41,69 +46,170 @@
                     </button>
                 </div>
                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                <div class="d-flex d-row justify-content-between col-12 col-md-9" style="color:#4e4a88;">
-                     <i class="material-icons mt-2 text-muted">search</i> 
-                 
-                     <i class="material-icons mt-2 text-muted" id= "fullScreen" onclick="openFullscreen();">fullscreen</i>
-                 
-                     <p class="mt-2 m-2 text-muted" >Event</p> 
-                 
-                     <p class="mt-2 m-2 text-muted" >Recritment</p> 
-
-                     <a href=" http://analysed.in/"><i class="material-icons mt-2 text-muted" >power_settings_new</i></a> 
-
+                <div class="d-flex flex-row col-12">
+                    <div class="col-md-6 d-none d-md-block">
+                        <div class="d-flex flex-row justify-content-xl-start justify-content-md-center">
+                            <form id="demo-2" class="mt-2">
+                                <input type="search" placeholder="Search" class="expand">
+                            </form> 
+                            <i class="material-icons mt-2 text-muted" id= "fullScreen" onclick="openFullscreen();">fullscreen</i>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 d-flex flex-row justify-content-md-end justify-content-sm-center">
+                            
+                         <i data-feather="bell" class="mt-3" id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i><span class=" badge bg-c-pink mr-4">3</span>
+                         <div class="dropdown-menu mt-3 droopdown" aria-labelledby="dropdownMenuButton1">
+                            <div class="media dropdown-item">
+                                <img src="navimg.jpg" class="media_img mr-3 mt-1" alt="...">
+                                <div class="media-body">
+                                  <h6 class="m-0">John Doe</h6>
+                                  <p class="mb-1 font-weight-light">Cras sit amet nibh libero, in gravida nulla.</p>
+                                  <p class="text-muted" style="font-size : 12px;">30 Minute ago</p>
+                                </div>
+                            </div>
+                            <div class="media dropdown-item">
+                                <img src="navimg.jpg" class="media_img mr-3 mt-1" alt="...">
+                                <div class="media-body">
+                                  <h6 class="m-0">John Doe</h6>
+                                  <p class="mb-1 font-weight-light">Cras sit amet nibh libero, in gravida nulla.</p>
+                                  <p class="text-muted" style="font-size : 12px;">30 Minute ago</p>
+                                </div>
+                            </div>
+                            <div class="media dropdown-item">
+                                <img src="navimg.jpg" class="media_img mr-3 mt-1" alt="...">
+                                <div class="media-body">
+                                  <h6 class="m-0">John Doe</h6>
+                                  <p class="mb-1 font-weight-light">Cras sit amet nibh libero, in gravida nulla.</p>
+                                  <p class="text-muted" style="font-size : 12px;">30 Minute ago</p>
+                                </div>
+                            </div>
+                        </div>
+                         <i data-feather="message-square" class="mt-3 sidebarCollapse_1" ></i><span class="badge bg-c-green mr-1 sidebarCollapse_1">5</span>
+                         <div class="dropdown">
+                            <a class=" nav-link" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="navimg.jpg" alt="user-img" class="img-fluid " style="width:30px; height:30px">
+                                <span>John Doe <i data-feather="chevron-down" class=""></i></span>
+                            </a>
+                            <div class="dropdown-menu mt-3" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#"><i data-feather="settings" class="mr-2"></i> Setting</a>
+                                <a class="dropdown-item mt-3" href="profile.html"><i data-feather="user" class="mr-2"></i> Profile</a>
+                                <a class="dropdown-item mt-3" href="#"><i data-feather="message-square" class="mr-2"></i> My Message</a>
+                                <a class="dropdown-item mt-3" href="#"><i data-feather="lock" class="mr-2"></i> Lock Screen</a>
+                                <a class="dropdown-item mt-3" href="#"><i data-feather="log-out" class="mr-2"></i> Logout</a>
+                            </div>
+                         </div>
+                    </div>
               </div>
             </div>
             </nav>
           </nav>
         </div>
           <!-- Navbar end -->
-          <!-- Sidebar -->
-          <nav id="sidebar">
-              <ul class="list components">
-                  <div class="card Sidebar_card" style="width: 18rem;">
-                      <img class="" src="Profile_photo.png" alt="Card image cap">
-                      <div class="card-body text-center">
-                        <h5 class="">Dummy</h5>
-                        <h5 class="">Designation as: </h5>
-                        <h5 class="">Organization as: </h5>
-                        <button class="btn">My Profile</button>
-                      </div>
-                  </div>
-                  <li class="active">
-                     <a href="index.html">Dashboard</a>
+          <!-- Right Sidebar -->
+          <nav class="sidebar">
+              <ul class="list components nav">
+                  <li class="nav-item active sideactive">
+                     <a href="index.html" class="nav-link"><i data-feather="home"></i><span class="ml-2"></span> Dashboard</a>
                   </li>
                   <li>
-                      <a href="create_virtual_recruitment.html">Create Virtual Recruitment</a>
+                      <a href="create_virtual_recruitment.html" class="nav-link"><i data-feather="globe"></i><span class="ml-2"></span> Create Virtual Recruitment</a>
                   </li>
                   <li>
-                      <a href="#">  My Database</a>
+                      <a href="my_database.html" class="nav-link"> <i data-feather="database"></i><span class="ml-2"></span> My Database</a>
                   </li>
                   <li>
-                      <a href="#"> Job Listing</a>
+                      <a href="job_listing.html" class="nav-link"><i data-feather="list"></i><span class="ml-2"></span> Job Listing</a>
                   </li>
                   <li>
-                      <a href="#"> Resume Sorting Tool</a>
+                      <a href="resume_Sorting_tool.html" class="nav-link"><i data-feather="layers"></i><span class="ml-2"></span> Resume Sorting Tool</a>
                   </li>
                   <li>
-                      <a href="#"> Create a Task</a>
+                      <a href="create_task.html" class="nav-link"><i data-feather="edit-2"></i><span class="ml-2"></span> Create a Task</a>
                   </li>
                   <li>
-                      <a href="#"> Create a Challenge</a>
+                      <a href="create_challenge.html" class="nav-link"><i data-feather="edit"></i><span class="ml-2"></span> Create a Challenge</a>
                   </li>
                   <li>
-                      <a href="#"> Share Profile</a>
+                      <a href="#" class="nav-link"><i data-feather="send"></i><span class="ml-2"></span> Share Profile</a>
                   </li>
                   <li>
-                      <a href="#"> Referral</a>
+                      <a href="#" class="nav-link"><i data-feather="external-link"></i><span class="ml-2"></span> Referral</a>
                   </li>
                   <li>
-                      <a href="#"> About Organization</a>
+                      <a href="#" class="nav-link"><i data-feather="info"></i><span class="ml-2"></span> About Organization</a>
                   </li>
               </ul>
              
           </nav>
-          <!-- Sidebar end -->
+          <!-- Right Sidebar end -->
+          <!-- Left Sidebar -->
+          <nav class="left_sidebar active">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="border-bottom border-secondary">
+                      <input type="text" placeholder="Search Friend" class="mt-4 m-3 p-1 px-2 col-10">
+                    </div>
+                  </div>
+                </div> 
+                <div class="row ">
+                    <div class="col-12">
+                        <div class="media p-3 d-flex border-bottom">
+                            <img src="navimg.jpg" class="media_img mr-2" alt="...">
+                            <div class="media-body mt-2">
+                                <h6 class="m-0">John Doe</h6>
+                            </div>
+                            <i class="fas fa-circle mt-2 circle ml-auto"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-12">
+                        <div class="media p-3 d-flex border-bottom">
+                            <img src="navimg.jpg" class="media_img mr-2" alt="...">
+                            <div class="media-body mt-2">
+                                <h6 class="m-0">John Doe</h6>
+                            </div>
+                            <i class="fas fa-circle mt-2 circle ml-auto"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-12">
+                        <div class="media p-3 d-flex border-bottom">
+                            <img src="navimg.jpg" class="media_img mr-2" alt="...">
+                            <div class="media-body mt-2">
+                                <h6 class="m-0">John Doe</h6>
+                            </div>
+                            <i class="fas fa-circle mt-2 circle ml-auto"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-12">
+                        <div class="media p-3 d-flex border-bottom">
+                            <img src="navimg.jpg" class="media_img mr-2" alt="...">
+                            <div class="media-body mt-2">
+                                <h6 class="m-0">John Doe</h6>
+                            </div>
+                            <i class="fas fa-circle mt-2 circle ml-auto"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-12">
+                        <div class="media p-3 d-flex border-bottom">
+                            <img src="navimg.jpg" class="media_img mr-2" alt="...">
+                            <div class="media-body mt-2">
+                                <h6 class="m-0">John Doe</h6>
+                            </div>
+                            <i class="fas fa-circle mt-2 circle ml-auto"></i>
+                        </div>
+                    </div>
+                </div>
+               
+                           
+          </nav>
+          <!-- Left Sidebar end -->
           <!-- Content start here -->
           <div id="content">
                 <div class="container-fluid">
@@ -339,75 +445,14 @@
 
 
 
+         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+          <!-- /* Popper.JS */ -->
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+         <!-- /* Bootstrap JS  */ -->
+         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+         <!-- /* jQuery Custom Scroller CDN */ -->
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+         <script src="js/script.js"></script>
 
-    
-    <!-- Optional JavaScript -->
-    <!-- jQuery CDN - Slim version (=without AJAX) -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <!-- Popper.JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-    <!-- Bootstrap JS -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-    <!-- jQuery Custom Scroller CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function () {
-          $('.sidebarCollapse').on('click', function () {
-              $('#sidebar, #content').toggleClass('active');
-              $('.collapse.in').toggleClass('in');
-              $('a[aria-expanded=true]').attr('aria-expanded', 'false');
-          });
-      });
-      /* Full Screen */
-    var elem = document.documentElement;
-    function openFullscreen() {
-    if (elem.requestFullscreen) {
-        elem.requestFullscreen();
-    } else if (elem.mozRequestFullScreen) { /* Firefox */
-        elem.mozRequestFullScreen();
-    } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
-        elem.webkitRequestFullscreen();
-    } else if (elem.msRequestFullscreen) { /* IE/Edge */
-        elem.msRequestFullscreen();
-    }
-    if (document.exitFullscreen) {
-        document.exitFullscreen();
-    } else if (document.mozCancelFullScreen) {
-        document.mozCancelFullScreen();
-    } else if (document.webkitExitFullscreen) {
-        document.webkitExitFullscreen();
-    } else if (document.msExitFullscreen) {
-        document.msExitFullscreen();
-    }
-    var x = document.getElementById("fullScreen");
-    if (x.innerHTML === "fullscreen") {
-        x.innerHTML = "fullscreen_exit";
-    } else {
-        x.innerHTML = "fullscreen";
-    }
-    }
-    /* End of Full Screen */
-
-    /* To change the icon on click */
-    function myFunction() {
-    var x = document.getElementById("showMore");
-    if (x.innerHTML === "toggle_off") {
-        x.innerHTML = "toggle_on";
-    } else {
-        x.innerHTML = "toggle_off";
-    }
-    }
-    function myFunctions() {
-    var x = document.getElementById("showmore");
-    if (x.innerHTML === "toggle_off") {
-        x.innerHTML = "toggle_on";
-    } else {
-        x.innerHTML = "toggle_off";
-    }
-    }
-    /* End of icon */
-
-    
-  </script>
   </body>
 </html>

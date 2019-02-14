@@ -1,22 +1,24 @@
 <!doctype html>
 <html lang="en">
   <head>
+        <title>Analysed</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 
     <!-- Css File Link -->
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/index.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <!-- Material Icon --> 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+    rel="stylesheet">
     <!-- Feather icon -->
-      <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>    <title>Analysed</title>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>   
     <!-- font awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    
   </head>
   <body class="bg-light">
     <div class="wrapper">
@@ -48,7 +50,7 @@
                     <div class="col-md-6 d-none d-md-block">
                         <div class="d-flex flex-row justify-content-xl-start justify-content-md-center">
                             <form id="demo-2" class="mt-2">
-                                <input type="search" placeholder="Search">
+                                <input type="search" placeholder="Search" class="expand">
                             </form> 
                             <i class="material-icons mt-2 text-muted" id= "fullScreen" onclick="openFullscreen();">fullscreen</i>
                         </div>
@@ -105,36 +107,36 @@
           <!-- Navbar end -->
           <!-- Right Sidebar -->
           <nav class="sidebar">
-              <ul class="list components navbar-nav">
-                  <li class="nav-item active">
+              <ul class="list components nav">
+                  <li class="nav-item active sideactive">
                      <a href="index.html" class="nav-link"><i data-feather="home"></i><span class="ml-2"></span> Dashboard</a>
                   </li>
                   <li>
                       <a href="create_virtual_recruitment.html" class="nav-link"><i data-feather="globe"></i><span class="ml-2"></span> Create Virtual Recruitment</a>
                   </li>
                   <li>
-                      <a href="my_database.html"> <i data-feather="database"></i><span class="ml-2"></span> My Database</a>
+                      <a href="my_database.html" class="nav-link"> <i data-feather="database"></i><span class="ml-2"></span> My Database</a>
                   </li>
                   <li>
-                      <a href="job_listing.html"><i data-feather="list"></i><span class="ml-2"></span> Job Listing</a>
+                      <a href="job_listing.html" class="nav-link"><i data-feather="list"></i><span class="ml-2"></span> Job Listing</a>
                   </li>
                   <li>
-                      <a href="resume_Sorting_tool.html"><i data-feather="layers"></i><span class="ml-2"></span> Resume Sorting Tool</a>
+                      <a href="resume_Sorting_tool.html" class="nav-link"><i data-feather="layers"></i><span class="ml-2"></span> Resume Sorting Tool</a>
                   </li>
                   <li>
-                      <a href="create_task.html"><i data-feather="edit-2"></i><span class="ml-2"></span> Create a Task</a>
+                      <a href="create_task.html" class="nav-link"><i data-feather="edit-2"></i><span class="ml-2"></span> Create a Task</a>
                   </li>
                   <li>
-                      <a href="create_challenge.html"><i data-feather="edit"></i><span class="ml-2"></span> Create a Challenge</a>
+                      <a href="create_challenge.html" class="nav-link"><i data-feather="edit"></i><span class="ml-2"></span> Create a Challenge</a>
                   </li>
                   <li>
-                      <a href="#"><i data-feather="send"></i><span class="ml-2"></span> Share Profile</a>
+                      <a href="#" class="nav-link"><i data-feather="send"></i><span class="ml-2"></span> Share Profile</a>
                   </li>
                   <li>
-                      <a href="#"><i data-feather="external-link"></i><span class="ml-2"></span> Referral</a>
+                      <a href="#" class="nav-link"><i data-feather="external-link"></i><span class="ml-2"></span> Referral</a>
                   </li>
                   <li>
-                      <a href="#"><i data-feather="info"></i><span class="ml-2"></span> About Organization</a>
+                      <a href="#" class="nav-link"><i data-feather="info"></i><span class="ml-2"></span> About Organization</a>
                   </li>
               </ul>
              
@@ -213,9 +215,9 @@
                 <div class="container-fluid">
                     <div class="row">
                          <div class="d-flex col-12 justify-content-center">
-                            <h2 class="p-2">Virtual Recruitment</h2>
+                            <h2 class="p-2 mt-4">Virtual Recruitment</h2>
                          </div>
-                         <div class="col-12 mt-5 p-5 form_content">
+                         <div class="col-12 mt-2 p-5 form_content">
                             <form>
                                 <div class="form-group row">
                                     <label for="staticEmail" class="col-sm-2 col-form-label">Recruiters Name</label>
@@ -226,7 +228,7 @@
                                 <div class="form-group row">
                                     <label for="inputPassword" class="col-sm-2 col-form-label">Organization</label>
                                     <div class="col-sm-10">
-                                    <input type="password" class="form-control" id="inputPassword" placeholder="Name of Organization">
+                                    <input type="text" class="form-control" id="inputPassword" placeholder="Name of Organization">
                                     </div>
                                 </div>
                                 <div class="form-group row">
@@ -238,7 +240,7 @@
                                 <div class="form-group row">
                                     <label for="inputPassword" class="col-sm-2 col-form-label">Position</label>
                                     <div class="col-sm-10">
-                                    <input type="password" class="form-control" id="inputPassword" placeholder="Ex: Php Developer">
+                                    <input type="text" class="form-control" id="inputPassword" placeholder="Ex: Php Developer">
                                     </div>
                                 </div>
                                 <div class="form-group row">
@@ -250,7 +252,7 @@
                                 <div class="form-group row">
                                     <label for="inputPassword" class="col-sm-2 col-form-label">Qualification</label>
                                     <div class="col-sm-10">
-                                    <input type="password" class="form-control" id="inputPassword" placeholder="Ex:BE Graduate">
+                                    <input type="text" class="form-control" id="inputPassword" placeholder="Ex:BE Graduate">
                                     </div>
                                 </div>
                                 <div class="form-group row">
@@ -262,7 +264,7 @@
                                 <div class="form-group row">
                                     <label for="inputPassword" class="col-sm-2 col-form-label">Job Location</label>
                                     <div class="col-sm-10">
-                                    <input type="password" class="form-control" id="inputPassword" placeholder="Ex: Mumbai">
+                                    <input type="text" class="form-control" id="inputPassword" placeholder="Ex: Mumbai">
                                     </div>
                                 </div>
                                 <div class="form-group row">
@@ -274,13 +276,13 @@
                                 <div class="form-group row">
                                     <label for="inputPassword" class="col-sm-2 col-form-label">Job Timings</label>
                                     <div class="col-sm-10">
-                                    <input type="password" class="form-control" id="inputPassword" placeholder="9 to 5">
+                                    <input type="text" class="form-control" id="inputPassword" placeholder="9 to 5">
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <label for="inputPassword" class="col-sm-2 col-form-label">Job Description</label>
                                     <div class="col-sm-10">
-                                    <input type="password" class="form-control" id="inputPassword" placeholder="Web Development">
+                                    <input type="text" class="form-control" id="inputPassword" placeholder="Web Development">
                                     </div>
                                 </div>
                                 <div class="d-flex justify-content-center">
@@ -295,96 +297,14 @@
 
 
 
+         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+          <!-- /* Popper.JS */ -->
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+         <!-- /* Bootstrap JS  */ -->
+         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+         <!-- /* jQuery Custom Scroller CDN */ -->
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+         <script src="js/script.js"></script>
 
-
-
-
-
-
-    
-    <!-- Optional JavaScript -->
-    <!-- jQuery CDN - Slim version (=without AJAX) -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <!-- Popper.JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-    <!-- Bootstrap JS -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-    <!-- jQuery Custom Scroller CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function () {
-          $('.sidebarCollapse').on('click', function () {
-              $('.sidebar, #content').toggleClass('active');
-              $('.collapse.in').toggleClass('in');
-              $('a[aria-expanded=true]').attr('aria-expanded', 'false');
-          });
-      });
-      $(document).ready(function () {
-          $('.sidebarCollapse_1').on('click', function () {
-              $('.left_sidebar').toggleClass('active');
-              $('.collapse.in').toggleClass('in');
-              $('a[aria-expanded=true]').attr('aria-expanded', 'false');
-          });
-      });
-      /* Full Screen */
-    var elem = document.documentElement;
-    function openFullscreen() {
-    if (elem.requestFullscreen) {
-        elem.requestFullscreen();
-    } else if (elem.mozRequestFullScreen) { /* Firefox */
-        elem.mozRequestFullScreen();
-    } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
-        elem.webkitRequestFullscreen();
-    } else if (elem.msRequestFullscreen) { /* IE/Edge */
-        elem.msRequestFullscreen();
-    }
-    if (document.exitFullscreen) {
-        document.exitFullscreen();
-    } else if (document.mozCancelFullScreen) {
-        document.mozCancelFullScreen();
-    } else if (document.webkitExitFullscreen) {
-        document.webkitExitFullscreen();
-    } else if (document.msExitFullscreen) {
-        document.msExitFullscreen();
-    }
-    var x = document.getElementById("fullScreen");
-    if (x.innerHTML === "fullscreen") {
-        x.innerHTML = "fullscreen_exit";
-    } else {
-        x.innerHTML = "fullscreen";
-    }
-    }
-    /* End of Full Screen */
-
-    /* To change the icon on click */
-    function myFunction() {
-    var x = document.getElementById("showMore");
-    if (x.innerHTML === "toggle_off") {
-        x.innerHTML = "toggle_on";
-    } else {
-        x.innerHTML = "toggle_off";
-    }
-    }
-    function myFunctions() {
-    var x = document.getElementById("showmore");
-    if (x.innerHTML === "toggle_off") {
-        x.innerHTML = "toggle_on";
-    } else {
-        x.innerHTML = "toggle_off";
-    }
-    }
-    /* Left Sidebar */
-    function slide(){
-        var x = getElementById("")
-    }
-    /* end of left sidebar */
-    /* End of icon */
-    /* Feather icon script */
-        feather.replace()
-
-/* end of script */
-
-    
-  </script>
   </body>
 </html>

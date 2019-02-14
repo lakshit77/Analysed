@@ -10,7 +10,7 @@
     
     <!-- Datatable end -->
     <!-- Css File Link -->
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/index.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <!-- Material Icon --> 
@@ -49,8 +49,12 @@
                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <div class="d-flex d-row col-12">
                     <div class="col-6 d-none d-md-block">
-                        <i class="material-icons mt-2 mr-5 text-muted">search</i> 
-                        <i class="material-icons mt-2 text-muted" id= "fullScreen" onclick="openFullscreen();">fullscreen</i>
+                        <div class="d-flex flex-row justify-content-xl-start justify-content-md-center">
+                            <form id="demo-2" class="mt-2">
+                                <input type="search" placeholder="Search" class="expand">
+                            </form> 
+                            <i class="material-icons mt-2 text-muted" id= "fullScreen" onclick="openFullscreen();">fullscreen</i>
+                        </div>
                     </div>
                     <div class="col-md-6 col-sm-12 d-flex flex-row justify-content-md-end justify-content-sm-center">
                             
@@ -1298,6 +1302,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="http://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+    <script src="js/script.js"></script>
     <script>
         $(document).ready( function () {
             $('#myTable').DataTable();
@@ -1316,89 +1321,8 @@
     </script>
     
     <!-- end datatable -->
-    <script type="text/javascript">
-      $(document).ready(function () {
-          $('.sidebarCollapse').on('click', function () {
-              $('.sidebar, #content').toggleClass('active');
-              $('.collapse.in').toggleClass('in');
-              $('a[aria-expanded=true]').attr('aria-expanded', 'false');
-          });
-      });
-      $(document).ready(function () {
-          $('.sidebarCollapse_1').on('click', function () {
-              $('.left_sidebar').toggleClass('active');
-              $('.collapse.in').toggleClass('in');
-              $('a[aria-expanded=true]').attr('aria-expanded', 'false');
-          });
-      });
-      /* Full Screen */
-    var elem = document.documentElement;
-    function openFullscreen() {
-    if (elem.requestFullscreen) {
-        elem.requestFullscreen();
-    } else if (elem.mozRequestFullScreen) { /* Firefox */
-        elem.mozRequestFullScreen();
-    } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
-        elem.webkitRequestFullscreen();
-    } else if (elem.msRequestFullscreen) { /* IE/Edge */
-        elem.msRequestFullscreen();
-    }
-    if (document.exitFullscreen) {
-        document.exitFullscreen();
-    } else if (document.mozCancelFullScreen) {
-        document.mozCancelFullScreen();
-    } else if (document.webkitExitFullscreen) {
-        document.webkitExitFullscreen();
-    } else if (document.msExitFullscreen) {
-        document.msExitFullscreen();
-    }
-    var x = document.getElementById("fullScreen");
-    if (x.innerHTML === "fullscreen") {
-        x.innerHTML = "fullscreen_exit";
-    } else {
-        x.innerHTML = "fullscreen";
-    }
-    }
-    /* End of Full Screen */
-
-    /* To change the icon on click */
-    function myFunction() {
-    var x = document.getElementById("showMore");
-    if (x.innerHTML === "toggle_off") {
-        x.innerHTML = "toggle_on";
-    } else {
-        x.innerHTML = "toggle_off";
-    }
-    }
-    function myFunctions() {
-    var x = document.getElementById("showmore");
-    if (x.innerHTML === "toggle_off") {
-        x.innerHTML = "toggle_on";
-    } else {
-        x.innerHTML = "toggle_off";
-    }
-    }
-    /* Left Sidebar */
-    function slide(){
-        var x = getElementById("")
-    }
-    /* end of left sidebar */
     
-    /* Feather icon script */
-        feather.replace()
-        /* Feather icon end */
-        /* Filter Table */
-        $(document).ready(function(){
-            $("#myInput").on("keyup", function() {
-              var value = $(this).val().toLowerCase();
-              $("#myTable tr").filter(function() {
-                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-              });
-             });
-        });
-        /* end of filter table */
 
-/* end of script */
 
     
   </script>

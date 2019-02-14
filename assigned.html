@@ -214,64 +214,70 @@
           <div id="content">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="d-flex col-12 justify-content-center mt-4">
-                            <h2 class="p-2">Assigned Tasks</h2>
-                        </div>
-                        <div class="col-md-6 col-lg-4 mt-3">
-                            <div class="card">
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item"> <b>Task Name</b> : Create Web page</li>
-                                    <li class="list-group-item">  <b>Description</b> : web page</li>
-                                    <li class="list-group-item"> <b>Requirement</b>:html, css</li>
-                                    <li class="list-group-item"> <b>Task Duration</b> : 10</li>
-                                </ul>
-                                <a href="task_view.html" class="btn btn-outline-secondary">View</a>
-                                
+                         <div class="d-flex col-12 justify-content-center">
+                            <h2 class="p-2 mt-4">Assign Task</h2>
+                         </div>
+                       <!--   <div class="col-12 mt-1  p-3">
+                            <div class="d-flex justify-content-end">
+                                <button class="btn btn-outline-secondary">Assigned Task</button>
                             </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 mt-3">
-                            <div class="card">
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item"> <b>Task Name</b> : Create Web page</li>
-                                    <li class="list-group-item">  <b>Description</b> : web page</li>
-                                    <li class="list-group-item"> <b>Requirement</b>:html, css</li>
-                                    <li class="list-group-item"> <b>Task Duration</b> : 10</li>
-                                </ul>
-                                <a href="task_view.html" class="btn btn-outline-secondary">View</a>                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 mt-3">
-                            <div class="card">
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item"> <b>Task Name</b> : Create Web page</li>
-                                    <li class="list-group-item">  <b>Description</b> : web page</li>
-                                    <li class="list-group-item"> <b>Requirement</b>:html, css</li>
-                                    <li class="list-group-item"> <b>Task Duration</b> : 10</li>
-                                </ul>
-                                <a href="task_view.html" class="btn btn-outline-secondary">View</a>                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 mt-3">
-                            <div class="card">
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item"> <b>Task Name</b> : Create Web page</li>
-                                    <li class="list-group-item">  <b>Description</b> : web page</li>
-                                    <li class="list-group-item"> <b>Requirement</b>:html, css</li>
-                                    <li class="list-group-item"> <b>Task Duration</b> : 10</li>
-                                </ul>
-                                <a href="task_view.html" class="btn btn-outline-secondary">View</a>                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 mt-3">
-                            <div class="card">
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item"> <b>Task Name</b> : Create Web page</li>
-                                    <li class="list-group-item">  <b>Description</b> : web page</li>
-                                    <li class="list-group-item"> <b>Requirement</b>:html, css</li>
-                                    <li class="list-group-item"> <b>Task Duration</b> : 10</li>
-                                </ul>
-                                <a href="task_view.html" class="btn btn-outline-secondary">View</a>                            </div>
-                        </div>
+                        </div> -->
+                         <div class="col-12 mt-2 p-5 form_content">
+                            <form>
+                                <div class="form-group row">
+                                    <label for="inputPassword" class="col-sm-2 col-form-label">Select the Seeker</label>
+                                    <div class="d-flex flex-column col-10">
+                                        <div class="form-check">
+                                            <label class="form-check-label">
+                                                <input type="checkbox" class="form-check-input" value="">Dummy1
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <label class="form-check-label">
+                                                <input type="checkbox" class="form-check-input" value="">Dummy2
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="inputPassword" class="col-sm-2 col-form-label">Name of Task</label>
+                                    <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="inputPassword" placeholder="Enter name of Task">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="inputPassword" class="col-sm-2 col-form-label">Description</label>
+                                    <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="inputPassword" placeholder="Enter the description of Challenge">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="inputPassword" class="col-sm-2 col-form-label">Accuracy of Task</label>
+                                    <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="inputPassword" placeholder="Enter the description of Challenge">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="staticEmail" class="col-sm-2 col-form-label">Task Ends on</label>
+                                    <div class="col-sm-10">
+                                    <input type="date" class="form-control" id="staticEmail" placeholder="mm/dd/yy">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="inputPassword" class="col-sm-2 col-form-label">Duration(in hours)</label>
+                                    <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="inputPassword" placeholder="Enter the Duration For task(in hours)">
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                    <button class="btn btn-outline-primary">Submit</button>
+                                </div>
+                            </form>
+                         </div>
                     </div>    
                 </div>
-            </div>
+          </div>
+
 
 
 
