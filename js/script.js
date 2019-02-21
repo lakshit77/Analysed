@@ -85,6 +85,12 @@ var elem = document.documentElement;
                 target.addClass('active');
             });
             /* End of active class */
+/* TO make name appear for input field for upload  */
+$('input[type="file"]').change(function(e){
+    var fileName = e.target.files[0].name;
+    $('.custom-file-label').html(fileName);
+});
+/* End of upload  */
 
         /* Datatable */
         
