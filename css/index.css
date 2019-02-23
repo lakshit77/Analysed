@@ -538,3 +538,35 @@ input::-webkit-input-placeholder {
 .dropdown-toggle::after {
     display:none !important;
 }
+
+/* jobseeker*/
+.card_background{
+    border-radius: 3% !important;
+    border: none !important;
+    box-shadow: 0 1px 20px 0 rgba(69,90,100,.08);
+}
+.card_header_color{
+    background: white !important;
+    border: none !important;
+}
+.icon_background{
+    color: white;
+    box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(255, 152, 0, 0.4);
+    margin-top: -20px;
+    border-radius: 4%; 
+    margin-right: 15px;
+    float: left;
+}
+.icon_background_1{
+    background: linear-gradient(60deg, #ffa726, #fb8c00);
+}
+.icon_background_2{
+    background: linear-gradient(60deg, #66bb6a, #43a047);
+}
+.icon_background_3{
+    background: linear-gradient(60deg, #ef5350, #e53935);
+}
+.icon_background .material-icons{
+    font-size: 36px;
+}
+/* end of jobseeker */

@@ -109,19 +109,31 @@
           <nav class="sidebar">
               <ul class="list components nav">
                   <li class="nav-item active sideactive">
-                     <a href="job_index.html" class="nav-link"><i data-feather="home"></i><span class="ml-2"></span> Dashboard</a>
+                     <a href="jobseeker_index.html" class="nav-link"><i data-feather="home"></i><span class="ml-2"></span> Dashboard</a>
                   </li>
                   <li>
-                      <a href="job_event.html" class="nav-link"><i data-feather="globe"></i><span class="ml-2"></span> My Event</a>
+                      <a href="jobseeker_scoreboard.html" class="nav-link"><i data-feather="globe"></i><span class="ml-2"></span> Scoreboard</a>
                   </li>
                   <li>
-                      <a href="job_create_challenge.html" class="nav-link"> <i data-feather="database"></i><span class="ml-2"></span> Create an Event</a>
+                      <a href="jobseeker_task.html" class="nav-link"> <i data-feather="database"></i><span class="ml-2"></span> My Task</a>
                   </li>
                   <li>
-                      <a href="job_listing.html" class="nav-link"><i data-feather="list"></i><span class="ml-2"></span> Share Profile</a>
+                      <a href="jobseeker_skill.html" class="nav-link"><i data-feather="globe"></i><span class="ml-2"></span>My Skills</a>
                   </li>
                   <li>
-                      <a href="resume_Sorting_tool.html" class="nav-link"><i data-feather="layers"></i><span class="ml-2"></span> Referal</a>
+                      <a href="jobseeker_event.html" class="nav-link"> <i data-feather="database"></i><span class="ml-2"></span> My Event</a>
+                  </li>
+                  <li>
+                      <a href="jobseeker_challenge.html" class="nav-link"><i data-feather="globe"></i><span class="ml-2"></span> My Challenge</a>
+                  </li>
+                  <li>
+                      <a href="jobseeker_portfolio.html" class="nav-link"> <i data-feather="database"></i><span class="ml-2"></span>My Portfolio</a>
+                  </li>
+                  <li>
+                      <a href="" class="nav-link"><i data-feather="list"></i><span class="ml-2"></span> Share Profile</a>
+                  </li>
+                  <li>
+                      <a href="" class="nav-link"><i data-feather="layers"></i><span class="ml-2"></span> Referal</a>
                   </li>
               </ul>
              
@@ -198,47 +210,53 @@
           <!-- Content start here -->
           <div id="content">
                 <div class="container-fluid">
-                    <div class="row mt-5">
-                    <div class="col-lg-4 col-sm-12">
-                        <div class="card" style="width: 18rem;">
-                            <img src="" class="card-img-top img-fluid" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <div class="row">
+                        <div class="col-12 mt-5 p-3">
+                            <div class="d-flex justify-content-center">
+                                <h4>Task Details</h4>
                             </div>
-                        </div>     
-                    </div>    
-                    <div class="col-lg-4 col-sm-12">
-                        <div class="card" style="width: 18rem;">
-                            <img src="" class="card-img-top img-fluid" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                        <div class="col-12 mt-4 form_content">
+                        <form>
+                            <div class="form-group row">
+                                <label class="col-sm-3 col-form-label"><b>Name of Task</b></label>
+                                <div class="col-sm-9">
+                                    <input type="text" readonly class="form-control-plaintext" value="test">
+                                </div>
+                                <label class="col-sm-3 col-form-label"><b>Description of Task</b></label>
+                                <div class="col-sm-9">
+                                    <input type="text" readonly class="form-control-plaintext" value="xyz">
+                                </div>
+                                <label class="col-sm-3 col-form-label"><b>End Date</b></label>
+                                <div class="col-sm-9">
+                                    <input type="text" readonly class="form-control-plaintext" value="5-5-19">
+                                </div>
+                                <label class="col-sm-3 col-form-label"><b>Task Cash</b> </label>
+                                <div class="col-sm-9">
+                                    <input type="text" readonly class="form-control-plaintext" value="">
+                                </div>
+                                <label class="col-sm-3 col-form-label"><b>Task Coupon Code</b> </label>
+                                <div class="col-sm-9">
+                                    <input type="text" readonly class="form-control-plaintext" value="">
+                                </div>
+                                <label class="col-sm-3 col-form-label"><b>Task Service</b></label>
+                                <div class="col-sm-9">
+                                    <input type="text" readonly class="form-control-plaintext" value="">
+                                </div>
+                                <label class="col-sm-3 col-form-label"><b>Task Hiring</b> </label>
+                                <div class="col-sm-9">
+                                    <input type="text" readonly class="form-control-plaintext" value="">
+                                </div>
+                                <label class="col-sm-3 col-form-label"><b>Other</b> </label>
+                                <div class="col-sm-9">
+                                    <input type="text" readonly class="form-control-plaintext" value="">
+                                </div>
                             </div>
-                        </div>     
-                    </div>    
-                    <div class="col-lg-4 col-sm-12">
-                        <div class="card" style="width: 18rem;">
-                            <img src="" class="card-img-top img-fluid" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>     
+                        </form>
+                        </div>
                     </div>    
                 </div>
             </div>
-                <div class="container-fluid">
-                        <div class="d-flex justify-content-center">
-                                <button class="btn btn-success mt-3">Take a tour</button>
-                         </div>
-               </div>
-    
-          </div>
-
 
 
 
