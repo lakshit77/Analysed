@@ -129,12 +129,49 @@
                   <li>
                       <a href="create_challenge.html" class="nav-link"><i data-feather="edit"></i><span class="ml-2"></span> Create a Challenge</a>
                   </li>
+                  
                   <li>
-                      <a href="#" class="nav-link"><i data-feather="send"></i><span class="ml-2"></span> Share Profile</a>
-                  </li>
-                  <li>
-                      <a href="#" class="nav-link"><i data-feather="external-link"></i><span class="ml-2"></span> Referral</a>
-                  </li>
+                        <a href="#" class="nav-link" data-toggle="modal" data-target="#modalpopup_share"><i data-feather="send"></i><span class="ml-2"></span> Share Profile</a>
+                      <!-- modal for share profile -->
+                      <div class="modal fade" id="modalpopup_share" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered" role="document">
+                              <div class="modal-content shadow" style="background-color: #e9ecef !important">
+                                  <div class="modal-body">
+                                      <div class="row my-5">
+                                        <div class="d-flex flex-row justify-content-center col-12">
+                                          <input type="text" id="myInput" class="col-12">
+                                        </div>
+                                        <div class="mx-auto mt-3">
+                                          <button onclick="copyText()">Copy text</button>
+                                        </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                     <!-- end of modal of share profile -->                      
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link" data-toggle="modal" data-target="#modalpopup_referal"><i data-feather="external-link"></i><span class="ml-2"></span> Referral</a>
+                        <!-- modal for referal -->
+                      <div class="modal fade" id="modalpopup_referal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered" role="document">
+                              <div class="modal-content shadow" style="background-color: #e9ecef !important">
+                                  <div class="modal-body">
+                                      <div class="row my-5">
+                                        <div class="d-flex flex-row justify-content-center col-12">
+                                          <input type="text" id="demo" value="DD541" class="col-12">
+                                        </div>
+                                        <div class="mx-auto mt-3">
+                                          <button onclick="CopyText()">Copy text</button>
+                                        </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                     <!-- end of modal of referal-->
+                    </li>
                   <li>
                       <a href="#" class="nav-link"><i data-feather="info"></i><span class="ml-2"></span> About Organization</a>
                   </li>
