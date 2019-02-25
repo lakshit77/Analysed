@@ -91,8 +91,18 @@ $('input[type="file"]').change(function(e){
     $('.custom-file-label').html(fileName);
 });
 /* End of upload  */
+/* Copy text in modal*/
+var x = document.URL;
+document.getElementById("myInput").setAttribute('value',x);
+function copyText() {
+    var copyText = document.getElementById("myInput");
+    copyText.select();
+    document.execCommand("copy");
+}
+function CopyText() {
+    var copyText = document.getElementById("demo");
+    copyText.select();
+    document.execCommand("copy");
+}
 
-        /* Datatable */
-        
-        /* end of datatable */
-        
+/*End of copy text*/
