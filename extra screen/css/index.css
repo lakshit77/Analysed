@@ -577,6 +577,8 @@ input::-webkit-input-placeholder {
                     /* Extra Page */
 /* ---------------------------------------------------- */
 
+
+/* Referal Page */
 .lak_div_small2{
     margin-bottom: 20px;
     border-bottom-right-radius: 10px;
@@ -614,4 +616,54 @@ input::-webkit-input-placeholder {
 }
 .lak_card_photo{
     width: 50%;
+}
+/* end of referal page */
+
+/* recruitment status */
+.lak_rounded{
+    border-radius: 50% !important;
+    width: 50px !important;
+}
+.lak_roundeded{
+    border-radius: 50% !important;
+    width: 25px !important;
+    height: 25px !important;
+}
+.lak_icon{
+    font-size: 60px !important;
+    vertical-align: -webkit-baseline-middle;
+}
+.lak_icons{
+    vertical-align: -7px;
+
+}
+.light{
+    opacity: 0.5;
+}
+.lak_card_color1{
+    background-color: #5a9ff7;
+    font-size: 15px;
+}
+.lak_card_color2{
+    background-color: #75d1d7;
+    font-size: 15px;
+}
+.lak_card_color3{
+    background-color: #d77bb7;
+    font-size: 15px;
+}
+.card{
+    border: none !important;
+}
+.lak_card1{
+border-top:3px solid #c4268c !important ;
+}
+.lak_card2{
+border-top:3px solid #f8ac4c !important ;
+}
+.lak_card3{
+border-top:3px solid #7aa7f8 !important ;
+}
+.lak_card4{
+border-top:3px solid #7ad4d6 !important ;
 }
